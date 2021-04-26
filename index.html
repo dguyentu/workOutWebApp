@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Workout App</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS     -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"/>
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+
+  <style>
+    .navbar .navbar-nav .nav-link:not(.btn) i.fa{
+      font-size: 18px;
+      position: relative;
+      top: 3px;
+      text-align: center;
+      width: 21px;
+    }
+  </style>
+
+</head>
+
+<body class="index-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" rel="tooltip" title="We Love Progress :)" data-placement="bottom" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="dumbbell" role="img" width="35" viewBox="0 0 640 512">
+                        <path fill="currentColor" d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"/>
+                    </svg>
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" data-nav-image="./assets/img/blurred-image-1.jpg">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/daniel-tu-08081614a/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <p class="d-lg-none d-xl-none">Twitter</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="page-header clear-filter" filter-color="orange">
+            <div class="page-header-image" data-parallax="false" style="background-image: url('assets/img/background-image2.jpg'); background-attachment: fixed;">
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
+                <div class="content-center brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="dumbbell" class="n-logo hvr-bob" role="img" width="100" viewBox="0 0 640 512">
+                        <path fill="currentColor" d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"/>
+                    </svg>
+                    <h1 class="h1-seo">Health & Fitness</h1>
+                    <h3>Track Your Progress</h3>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registerModal">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="section section-basic w-icons">
+                <div class="container text-center mt-5">
+                    <h3 class="title" data-aos="fade-down" data-aos-offset="100">What is this about?</h3>
+                    <div class="row">
+                        <div class="col col-sm-3" data-aos="fade-up" data-aos-delay="0"  data-aos-offset="100">
+                            <div class="w-icon mx-auto hvr-ripple-out">
+                                <i class="fa fa-dumbbell"></i>
+                            </div>
+                            <h3>Programs</h3>
+                            <p>Create or use Workout programs.</p>
+                        </div>
+                        <div class="col col-sm-3" data-aos="fade-up" data-aos-delay="200" data-aos-offset="100">
+                            <div class="w-icon mx-auto hvr-ripple-out">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <h3>Results</h3>
+                            <p>Insert the results from your workout.</p>
+                        </div>
+                        <div class="col col-sm-3" data-aos="fade-up" data-aos-delay="400" data-aos-offset="100">
+                            <div class="w-icon mx-auto hvr-ripple-out">
+                                <i class="fa fa-chart-area"></i>
+                            </div>
+                            <h3>Charts</h3>
+                            <p>Custom charts based off your results to track progress.</p>
+                        </div>
+                        <div class="col col-sm-3" data-aos="fade-up" data-aos-delay="600" data-aos-offset="100">
+                            <div class="w-icon mx-auto hvr-ripple-out">
+                                <i class="fa fa-chart-line"></i>
+                            </div>
+                            <h3>Progress</h3>
+                            <p>Use your progress as motivation.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section section-tabs" style="background-color: #f2f2f2;">
+                <div class="container text-center">
+                    <h3 class="title" data-aos="fade-down" data-aos-offset="100">Features</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-8 col-lg-6 ml-auto mr-auto" data-aos="fade-up" data-aos-offset="100">
+                            <img src="assets/img/dashboard.png" style="width:100%;"/>
+                            <!-- Nav tabs -->
+                            <div class="card" data-aos="fade-up" data-aos-offset="100">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#programs" role="tab">
+                        <i class="fa fa-clipboard-list"></i> Programs
+                      </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#calendar" role="tab">
+                        <i class="fa fa-calendar"></i> Calendar
+                      </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#weight" role="tab">
+                        <i class="fa fa-weight"></i> Weight
+                      </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#tips" role="tab">
+                        <i class="fa fa-lightbulb"></i> Tips
+                      </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content text-center">
+                                        <div class="tab-pane active" id="programs" role="tabpanel">
+                                            <p>Create, edit and share your own workout programs. Set goals to strive for and create a program to progress towards that goal. Our intuitive algorithm will create programs based on the results of all current users.</p>
+                                        </div>
+                                        <div class="tab-pane" id="calendar" role="tabpanel">
+                                            <p>A weekly or monthly overview of all your workout programs. Workout programs you signed up for will show up automatically in your personalized calendar. This calendar can be linked to your phone to stay motivated.</p>
+                                        </div>
+                                        <div class="tab-pane" id="weight" role="tabpanel">
+                                            <p>Keep track of your weight throughout the year. Our algorithm will find patterns based on your weight throughout the week, month, year or longer when you log it. The app gives insights and advice to stay on the desired path for optimal weight whether you want to lose fat, gain muscle or just maintain.</p>
+                                        </div>
+                                        <div class="tab-pane" id="tips" role="tabpanel">
+                                            <p>The app's algorithm will give detailed insights about your workout results. It will send simple tips about every aspect of healthy living based on your own results.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-quote">
+                <div class="container">
+                    <div class="row text-center align-items-center justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <blockquote data-aos="fade-up" data-aos-offset="350">
+                                <p class="blockquote blockquote-primary">
+                                    <span>"No citizen has a right to be an amateur in the matter of physical training... what a disgrace it is to grow old without ever seeing the beauty and strength of which the body is capable."</span>
+                                    <br>
+                                    <br>
+                                    <small>
+                                    - Socrates 469 to 399 BC
+                                    </small>
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-newsletter">
+                <div class="container">
+                    <div class="row text-center align-items-center" data-aos="fade-down">
+                        <div class="col-12">
+                            <h2 class="title text-center">
+                                Stay<strong> in</strong> Touch!<br />
+                                <small>Subscribe for Weekly Emails.</small>
+                            </h2>
+                            <form action="https://facebook.us3.list-manage.com/subscribe/post?u=1d1236e59c239ea5b2b874207&amp;id=4f9d29f79c" method="post" target="_blank">
+                                <input type="email" name="EMAIL" id="mce-EMAIL" required />
+                                <label for="mce-email">email address</label>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1d1236e59c239ea5b2b874207_4f9d29f79c" tabindex="-1" value=""></div>
+                                <input type="submit" value="Subscribe" name="subscribe" class="newsletter-button" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer" data-background-color="black">
+                <div class="container">
+                    <div class="copyright text-center">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> Created by <a href="https://www.linkedin.com/in/daniel-tu-08081614a/" target="_blank">Dan Tu</a>.
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="title text-center">
+                        Keep track of <strong>our</strong> progress!<br />
+                        <small>Subscribe to Stay Informed</small>
+                    </h2>
+                    <form action="https://facebook.us3.list-manage.com/subscribe/post?u=1d1236e59c239ea5b2b874207&amp;id=4f9d29f79c" method="post" target="_blank">
+                        <input type="email" name="EMAIL" id="mce-EMAIL" required />
+                        <label for="mce-email">email address</label>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1d1236e59c239ea5b2b874207_4f9d29f79c" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" class="newsletter-button" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+</html>
